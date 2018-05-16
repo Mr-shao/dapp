@@ -26,6 +26,11 @@ body{
     text-align: center;
     padding: 5px;
 }
+
+.invite{
+    color: #ddd;
+    float: right;
+}
 .required label::before{
     content: '*';
     color: red;

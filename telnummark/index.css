@@ -17,6 +17,10 @@ body{
     color: #fff;
     background: rgba(18,206,102,.4);
 }
+.invite{
+    color: #ddd;
+    float: right;
+}
 ul{
     padding: 0;
 }
