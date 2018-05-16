@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>电话号码天眼</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="content">
+        <div id="mask">
+            <div id="mask_modal"></div>
+            <div class="input-group mask-block">
+                <input type="text" id="tag_input" class="form-control" placeholder="标签名称">
+                <span class="input-group-btn">
+                    <button class="btn btn-success" type="button" id="submit_tag_btn">
+                        提交
+                    </button>
+                </span>
+            </div>
+        </div>
+        <h4 class="head-title">
+            <span class="glyphicon glyphicon-eye-open"></span>
+            号码天眼
+        </h4>
+        <div class="alert alert-danger" id="warning_alert" role="alert">页面加载中，请稍后...</div>    
+        <div class="">
+            <div class="input-group search-wrapper">
+                <input type="number" id="search_input" class="form-control input-lg" placeholder="输入电话号码">
+                <span class="input-group-btn" id="search">
+                    <button class="btn btn-lg btn-success" type="button">
+                        <span class="glyphicon glyphicon-earphone"></span>
+                        查询
+                    </button>
+                </span>
+            </div>
+        </div>
+        <div id="current_num">
+            <span class="glyphicon glyphicon-phone-alt"></span>
+            <span class="num"></span>
+        </div>
+        <div id="mark_list">
+            <div class="desc">
+                <span>
+                    <span class="glyphicon glyphicon-bookmark"></span>
+                    <span id="mark_info">此号码无人标记，点击自定义进行标记：</span>
+                    <span class="mark-tip"><i class="glyphicon glyphicon-info-sign"></i> 点击标签可进行标记</span>
+                </span>
+            </div>            
+            <div class="tag-list" id="tag_list"></div>
+            <button class="mark-edit btn" id="edit_self"><span class="glyphicon glyphicon-edit"></span> 自定义 +</button>
+        </div>
+    </div>
+    <div id="footer">
+        基于星云链的电话号码标记平台 ©史迪仔 2018 <img src="../assets/logo.png" height="25" alt="">
+    </div>
+</body>
+<script type="text/javascript" src="../lib/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../lib/nebPay.js"></script>
+<script type="text/javascript" src="../lib/nebulas.js"></script>
+<script type="text/javascript" src="./index.js"></script>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>物流信息</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="content">
+        <h4 class="head-title">
+            <span class="glyphicon glyphicon-globe"></span>
+            星云物流
+        </h4>
+        <div class="alert alert-danger" id="warning_alert" role="alert">页面加载中，请稍后...</div>    
+        <div class="">
+            <div class="input-group search-wrapper">
+                <input type="number" id="search_input" class="form-control input-lg" placeholder="输入订单号">
+                <span class="input-group-btn" id="search">
+                <button class="btn btn-lg btn-success" type="button">搜索 / 创建</button>
+                </span>
+            </div>
+        </div>
+        <div class="log-wrapper" id="log_wrapper">
+            <div id="empty_order">
+                <i>暂无该订单号,是否创建物流信息？ </i>
+                <button class="btn btn-info" id="build">创建</button>
+            </div>
+            <div class="btn-group operate pre-operate" id="pre_operate" role="group" aria-label="...">
+                <button type="button" id="pre_update" class="col-sm-6 col-xs-6 col-md-6 btn btn-success">更新物流</button>
+                <button type="button" id="pre_end" class="col-sm-6 col-xs-6 col-md-6 btn btn-danger">结束物流</button>
+            </div>
+            <ul id="log_list">
+            </ul>
+        </div>
+        <div class="mask-wrapper" id="mask" class="hide">
+            <div class="mask">
+                <div class="title bg-primary">更新物流状态</div>
+                <form>
+                    <div class="form-group">
+                      <label for="order-number">订单号</label>
+                      <input type="number" class="form-control" id="order_number">
+                    </div>
+                    <div class="required form-group">
+                      <label for="content">物流信息</label>
+                      <input type="text" class="form-control" id="content" placeholder="必填项">
+                    </div>
+                    <div class="form-group">
+                      <label for="remark">备注</label>
+                      <input type="text" class="form-control" id="remark" placeholder="选填项">
+                    </div>
+                    <br>
+                    <div class="btn-group operate" role="group" aria-label="...">
+                        <button type="button" id="operate_btn" class="col-sm-6 col-xs-6 col-md-6 btn btn-success">更新物流</button>
+                        <button type="button" id="operate_cancel" class="col-sm-6 col-xs-6 col-md-6 btn btn-default">取消</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+<div id="footer">
+    基于星云链的物流信息应用 ©史迪仔 2018 <img src="../assets/logo.png" height="25" alt="">
+</body>
+<script type="text/javascript" src="../lib/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../lib/nebPay.js"></script>
+<script type="text/javascript" src="../lib/nebulas.js"></script>
+<script type="text/javascript" src="./index.js"></script>
+</html>
