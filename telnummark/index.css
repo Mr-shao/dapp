@@ -148,3 +148,6 @@ ul>li .icon{
     z-index: 6;
     color: #fff;
 }
+#account_test{
+    display: none;
+}
