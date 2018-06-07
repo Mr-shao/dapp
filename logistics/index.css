@@ -1,4 +1,5 @@
 html, body{
+    font-family: "Hannotate SC", Georgia, Serif;        
     width: 100%;
     height: 100%;
 }
@@ -130,4 +131,12 @@ ul>li .icon{
 }
 #account_test{
     display: none;
+}
+.notice{
+    color: #fff;
+    background: slategray;
+    padding: 10px;
+}
+.speak{
+    float: right;
 }
